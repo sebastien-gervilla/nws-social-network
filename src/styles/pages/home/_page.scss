@@ -1,0 +1,54 @@
+#home-page {
+
+    .header {
+        display: flex;
+        padding: 16px 0;
+    }
+
+    .posts {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .post {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+
+            padding: $size-16;
+
+            border-radius: $radius;
+            border: $border $grey-300;
+            background-color: $grey-0;
+
+            .informations {
+                display: flex;
+                gap: 8px;
+
+                .author {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+            }
+
+            .content {
+                padding: $size-16 0;
+
+                p {
+                    font-size: $size-18;
+                }
+            }
+
+            .images {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                .image {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

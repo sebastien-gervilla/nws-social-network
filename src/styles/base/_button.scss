@@ -1,0 +1,64 @@
+button.animated, a.animated-button {
+    padding: 8px 16px;
+
+    color: $static-grey-50;
+    border: 2px solid;
+    border-color: $main-color-500;
+    border-radius: $radius;
+    background-color: $main-color-500;
+
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: $transition;
+
+    &.red {
+        border-color: $red;
+        background-color: $red;
+    }
+
+    &:hover {
+        transition: $transition;
+    }
+
+    &:not(.filled) {
+        &:hover {
+            color: $main-color-500;
+            background-color: transparent;
+        }
+    }
+
+    &.filled:hover {
+        border-color: $main-color-500;
+        background-color: $main-color-500;
+
+        &.red {
+            border-color: $red-dark;
+            background-color: $red-dark;
+        }
+    }
+
+    &.outlined {
+        color: $main-color-500;
+        background-color: transparent;
+
+        &:hover {
+            color: $grey-50;
+            background-color: $main-color-500;
+        }
+    }
+
+    &:disabled {
+        color: $grey-500;
+        background-color: $grey-300;
+        border-color: $grey-400;
+
+        cursor: not-allowed;
+
+        &:hover {
+            color: $grey-500;
+            background-color: $grey-300;
+            border-color: $grey-400;
+        }
+    }
+}

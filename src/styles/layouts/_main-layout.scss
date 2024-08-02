@@ -1,0 +1,16 @@
+.main-area {
+    .main-content {
+        width: min(1200px, calc(100% - 64px));
+        padding: 16px;
+        margin: 0 auto;
+
+        .wrapper > * {
+            grid-column: 2;
+        }
+        
+        .full-size {
+            width: 100%;
+            margin: 0;
+        }
+    }
+}
