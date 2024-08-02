@@ -42,6 +42,7 @@ const HomePage: FC = () => {
                 <img
                     src={`${import.meta.env.VITE_API_URL}${image.url}`}
                     alt={image.url}
+                    loading='lazy'
                 />
             </div>
         ));

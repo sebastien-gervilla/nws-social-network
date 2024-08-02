@@ -1,6 +1,6 @@
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Auth, Home, Login, Register } from "./pages";
+import { Home, Login, Register } from "./pages";
 import { AuthContextProvider } from './contexts/AuthContext';
 import { ProtectedRoute } from './components';
 
@@ -18,7 +18,6 @@ const Application = () => {
 
                             <Route path='/login' element={<Login />} />
                             <Route path='/register' element={<Register />} />
-                            <Route path='/integrations/google/oauth2/callback' element={<Auth />} />
 
                         </Routes>
                     </BrowserRouter>
