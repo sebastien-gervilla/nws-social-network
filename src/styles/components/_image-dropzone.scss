@@ -1,0 +1,13 @@
+.image-dropzone {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    width: 100%;
+
+    .preview {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+}

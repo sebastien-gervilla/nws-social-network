@@ -1,0 +1,18 @@
+.dropzone {
+    padding: 48px 16px;
+
+    border-radius: $radius;
+    border: 2px dashed $main-color-500;
+    background-color: $grey-50;
+
+    transition: background-color $transition;
+
+    &.dropping {
+        background-color: $main-color-100;
+        // transition: background-color $transition;
+    }
+
+    p {
+        text-align: center;
+    }
+}
